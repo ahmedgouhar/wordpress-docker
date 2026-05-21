@@ -1,62 +1,27 @@
-# =====================
-# Terraform
-# =====================
-*.tfstate
-*.tfstate.*
-crash.log
-crash.*.log
 
-.terraform/
-.terraform.lock.hcl
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-*.tfvars
-*.tfvars.json
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# testing
+/coverage
 
-terraform.rc
-.terraformrc
+# production
+/build
 
-# plan files (optional but recommended)
-tfplan
-*.tfplan
-
-# =====================
-# Docker
-# =====================
-**/docker-compose.override.yml
-**/docker-compose.*.override.yml
-
-*.pid
-*.seed
-*.log
-
-# container volumes (if local dev)
-volumes/
-data/
-
-# =====================
-# OS / IDE
-# =====================
+# misc
 .DS_Store
-Thumbs.db
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-.vscode/
-.idea/
-
-# =====================
-# Environment variables
-# =====================
-.env
-.env.*
-
-# =====================
-# Backup / temp
-# =====================
-*.bak
-*.tmp
-*.swp
-node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist
+.git
+.terraform
