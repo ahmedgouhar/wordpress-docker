@@ -1,6 +1,8 @@
 resource "aws_db_subnet_group" "this" {
-  name       = "wordpress-db-subnet-group"
+  name = "wordpress-db"
+
   subnet_ids = var.subnets
+
 }
 
 resource "aws_security_group" "rds" {

@@ -27,4 +27,5 @@ module "rds" {
 
   vpc_id  = module.vpc.vpc_id
   subnets = module.vpc.private_subnets
+  
 }
